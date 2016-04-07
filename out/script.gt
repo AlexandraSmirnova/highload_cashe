@@ -1,0 +1,12 @@
+set terminal x11 size 1360, 700
+set title 'Result'
+set xlabel 'X'
+set ylabel 'Y'
+set xrange [1:131072]
+set yrange [0.0:23]
+set logscale x
+set grid
+plot 'out/dat.txt' using 1:2 w l lw 2 title 'Random acsess'
+pause -1
+
+1
